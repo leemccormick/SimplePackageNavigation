@@ -14,6 +14,7 @@
 		55BFD0742B975FBA003CADC0 /* SimplePackageNavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BFD0732B975FBA003CADC0 /* SimplePackageNavigationUITests.swift */; };
 		55BFD0762B975FBA003CADC0 /* SimplePackageNavigationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BFD0752B975FBA003CADC0 /* SimplePackageNavigationUITestsLaunchTests.swift */; };
 		B2EDE74E2B98B7AC00F0ECEB /* TabMicro in Frameworks */ = {isa = PBXBuildFile; productRef = B2EDE74D2B98B7AC00F0ECEB /* TabMicro */; };
+		B2EDE7542B991C2D00F0ECEB /* AppConfig in Frameworks */ = {isa = PBXBuildFile; productRef = B2EDE7532B991C2D00F0ECEB /* AppConfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		55BFD0732B975FBA003CADC0 /* SimplePackageNavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePackageNavigationUITests.swift; sourceTree = "<group>"; };
 		55BFD0752B975FBA003CADC0 /* SimplePackageNavigationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePackageNavigationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B2EDE74F2B98C46300F0ECEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B2EDE7522B9918CB00F0ECEB /* AppConfig */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppConfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EDE7542B991C2D00F0ECEB /* AppConfig in Frameworks */,
 				B2EDE74E2B98B7AC00F0ECEB /* TabMicro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +84,7 @@
 		55A72CBC2B9763F400DA628A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B2EDE7522B9918CB00F0ECEB /* AppConfig */,
 				55A72CC42B976ECF00DA628A /* CommonUI */,
 				55A72CC32B97694300DA628A /* Navigation */,
 			);
@@ -182,6 +186,7 @@
 			name = SimplePackageNavigation;
 			packageProductDependencies = (
 				B2EDE74D2B98B7AC00F0ECEB /* TabMicro */,
+				B2EDE7532B991C2D00F0ECEB /* AppConfig */,
 			);
 			productName = SimplePackageNavigation;
 			productReference = 55BFD0542B975FB9003CADC0 /* Production SimplePackageNavigation .app */;
@@ -1499,6 +1504,10 @@
 		B2EDE74D2B98B7AC00F0ECEB /* TabMicro */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TabMicro;
+		};
+		B2EDE7532B991C2D00F0ECEB /* AppConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppConfig;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

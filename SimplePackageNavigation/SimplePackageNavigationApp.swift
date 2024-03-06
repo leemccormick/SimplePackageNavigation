@@ -1,5 +1,6 @@
 import SwiftUI
 import TabMicro
+import AppConfig
 
 // MARK: - Import Micro Apps
 #if MICRO_DEBUG
@@ -14,21 +15,33 @@ struct SimplePackageNavigationApp: App {
     
     var body: some Scene {
         WindowGroup {
-#if MICRO_DEBUG
-            if ProcessInfo.processInfo.environment["microApp1"] == "true" {
-                MicroApp1NavigationView()
-            } else if ProcessInfo.processInfo.environment["microApp2"] == "true" {
-                MicroApp2NavigationView()
-            } else if ProcessInfo.processInfo.environment["commonUI"] == "true" {
-                CommonView1()
-            } else {
-                EmptyView()
-            }
-#else
-            BottomTabView()
-#endif
-            
+            ContentViewBasedOnConfiguration()
+                .onAppear {
+                    print("-------------------------- In Main App  --------------------------")
+                    print("✅ AppBuildConfiguration: \(AppBuildConfiguration.shared.environment)")
+                    print("🌍 AppBuildConfiguration BaseURL: \(AppBuildConfiguration.shared.baseURL)")
+                    print("-------------------------------------------------------------------")
+                }
         }
+    }
+}
+
+// MARK: - ContentView Based on Enviroment
+struct ContentViewBasedOnConfiguration: View  {
+    var body: some View {
+#if MICRO_DEBUG
+        if ProcessInfo.processInfo.environment["microApp1"] == "true" {
+            MicroApp1NavigationView()
+        } else if ProcessInfo.processInfo.environment["microApp2"] == "true" {
+            MicroApp2NavigationView()
+        } else if ProcessInfo.processInfo.environment["commonUI"] == "true" {
+            CommonView1()
+        } else {
+            EmptyView()
+        }
+#else
+        BottomTabView()
+#endif
     }
 }
 

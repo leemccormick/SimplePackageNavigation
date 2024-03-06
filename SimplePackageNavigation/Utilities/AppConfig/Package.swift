@@ -4,26 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "MicroApp1",
-    platforms: [.iOS(.v17)],
+    name: "AppConfig",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "MicroApp1",
-            targets: ["MicroApp1"]),
-    ],
-    dependencies: [
-        .package(path: "Navigation"),
-        .package(path: "CommonUI"),
-        .package(path: "AppConfig"),
+            name: "AppConfig",
+            targets: ["AppConfig"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "MicroApp1",
-            dependencies: ["Navigation", "CommonUI", "AppConfig"]),
+            name: "AppConfig"),
         .testTarget(
-            name: "MicroApp1Tests",
-            dependencies: ["MicroApp1"]),
-    ])
+            name: "AppConfigTests",
+            dependencies: ["AppConfig"]),
+    ]
+)
