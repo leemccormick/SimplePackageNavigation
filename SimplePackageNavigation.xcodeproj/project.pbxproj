@@ -49,6 +49,7 @@
 		55BFD06F2B975FBA003CADC0 /* SimplePackageNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePackageNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55BFD0732B975FBA003CADC0 /* SimplePackageNavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePackageNavigationUITests.swift; sourceTree = "<group>"; };
 		55BFD0752B975FBA003CADC0 /* SimplePackageNavigationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePackageNavigationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B21A44F12BA0DD340000E75C /* MicroApp3 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MicroApp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 		55A72CBD2B97640800DA628A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B21A44F12BA0DD340000E75C /* MicroApp3 */,
 				55A72CC52B977FE800DA628A /* MicroApp2 */,
 				55A72CC22B97662100DA628A /* MicroApp1 */,
 				55A72CBE2B97644600DA628A /* TabMicro */,
