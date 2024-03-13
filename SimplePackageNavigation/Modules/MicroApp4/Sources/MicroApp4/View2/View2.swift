@@ -17,10 +17,15 @@ public struct View2: View {
                 viewModel.popToRootButtonTapped()
             }
             .buttonStyle(GreenButton(isEnabled: false))
+            
+            Button("Go To Micro App 5") {
+                viewModel.goToMicroApp5Tapped()
+            }
+            .buttonStyle(LightGreenButton())
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background {
-            Color.brown.opacity(0.25)
+            Color.cyan.opacity(0.50)
         }
     }
 }

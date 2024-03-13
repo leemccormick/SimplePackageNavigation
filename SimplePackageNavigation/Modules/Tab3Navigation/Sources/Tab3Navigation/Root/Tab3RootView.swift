@@ -18,6 +18,11 @@ struct Tab3RootView: View {
                 viewModel.goToMicroApp4()
             }
             .buttonStyle(LightGreenButton())
+            
+            Button("GO TO Micro App 5") {
+                viewModel.goToMicroApp5()
+            }
+            .buttonStyle(LightGreenButton())
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background {

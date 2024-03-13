@@ -13,6 +13,12 @@ public class Tab3Router: ObservableObject {
         case microApp4View2
     }
     
+    public enum MicroApp5Destination: Codable, Hashable {
+        case microApp5View1
+        case microApp5View2
+        case microApp5View3
+    }
+    
     @Published public var navPathWrapper = NavigationPathWrapper()
     
     public init() {}
@@ -22,6 +28,10 @@ public class Tab3Router: ObservableObject {
     }
     
     public func navigateMicroApp4Destination(to destination: MicroApp4Destination) {
+        navPathWrapper.appendToNavPath(destination)
+    }
+    
+    public func navigateMicroApp5Destination(to destination: MicroApp5Destination) {
         navPathWrapper.appendToNavPath(destination)
     }
     

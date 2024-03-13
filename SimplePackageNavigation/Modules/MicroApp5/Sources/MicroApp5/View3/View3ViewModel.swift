@@ -1,7 +1,7 @@
 import Foundation
 import Navigation
 
-class View2ViewModel: ObservableObject {
+class View3ViewModel: ObservableObject {
     private let tab3Router = Tab3Router.shared
     
     func goBackButtonTapped() {
@@ -10,9 +10,5 @@ class View2ViewModel: ObservableObject {
     
     func popToRootButtonTapped() {
         tab3Router.navigateToRoot()
-    }
-    
-    func goToMicroApp5Tapped() {
-        tab3Router.navigateMicroApp5Destination(to: .microApp5View1)
     }
 }
