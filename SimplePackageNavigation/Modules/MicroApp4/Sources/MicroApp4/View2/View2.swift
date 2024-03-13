@@ -1,27 +1,26 @@
 import CommonUI
 import SwiftUI
 
-struct View2: View {
-    var viewModel = View2ViewModel()
-    
-    var body: some View {
+public struct View2: View {
+    private var viewModel = View2ViewModel()
+    public init() {}
+    public var body: some View {
         VStack {
-            Text("Micro App 3")
+            Text("Micro App 4")
             Text("View 2")
             Button("GO BACK") {
                 viewModel.goBackButtonTapped()
             }
             .buttonStyle(GreenButton(isEnabled: true))
             
-            Button("GO TO Micro App 4") {
-                viewModel.goToMicroApp4ButtonTapped()
+            Button("Pop To Root") {
+                viewModel.popToRootButtonTapped()
             }
-            .buttonStyle(GreenButton(isEnabled: true))
-            
+            .buttonStyle(GreenButton(isEnabled: false))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background {
-            Color.purple.opacity(0.25)
+            Color.brown.opacity(0.25)
         }
     }
 }

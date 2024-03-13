@@ -1,4 +1,5 @@
 import SwiftUI
+import CommonUI
 
 struct View1: View {
     var viewModel = View1ViewModel()
@@ -7,13 +8,20 @@ struct View1: View {
         VStack {
             Text("Micro App 3")
             Text("View 1")
-            Button("GO TO View2") {
+            
+            Button("GO TO Micro App 3 : View2") {
                 viewModel.goToView2ButtonTapped()
             }
+            .buttonStyle(GreenButton(isEnabled: true))
+            
+            Button("GO TO Micro App 4") {
+                viewModel.goToMicroApp4()
+            }
+            .buttonStyle(LightGreenButton())
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background {
-            Color.teal.opacity(0.25)
+            Color.purple.opacity(0.50)
         }
     }
 }

@@ -1,6 +1,7 @@
 import MicroApp1
 import MicroApp2
 import MicroApp3
+import MicroApp4
 import SwiftUI
 
 public struct BottomTabView: View {
@@ -21,6 +22,10 @@ public struct BottomTabView: View {
             MicroApp3NavigationView()
                 .tabItem {
                     Label("Tab3", systemImage: "3.lane")
+                }
+            MicroApp4NavigationView()
+                .tabItem {
+                    Label("Tab4", systemImage: "4.lane")
                 }
         }
         .onAppear { self.didAppear?(self) }

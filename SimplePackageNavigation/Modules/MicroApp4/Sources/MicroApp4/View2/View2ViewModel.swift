@@ -8,7 +8,7 @@ class View2ViewModel: ObservableObject {
         tab3Router.navigateBack()
     }
     
-    func goToMicroApp4ButtonTapped() {
-        tab3Router.navigateMicroApp4Destination(to: .microApp4View1)
+    func popToRootButtonTapped() {
+        tab3Router.navigateToRoot()
     }
 }

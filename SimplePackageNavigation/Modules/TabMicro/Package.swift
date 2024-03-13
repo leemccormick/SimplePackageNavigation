@@ -16,13 +16,14 @@ let package = Package(
         .package(path: "MicroApp1"),
         .package(path: "MicroApp2"),
         .package(path: "MicroApp3"),
+        .package(path: "MicroApp4"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "TabMicro",
-            dependencies: ["MicroApp1", "MicroApp2", "MicroApp3"]),
+            dependencies: ["MicroApp1", "MicroApp2", "MicroApp3", "MicroApp4"]),
         .testTarget(
             name: "TabMicroTests",
             dependencies: ["TabMicro"]),
