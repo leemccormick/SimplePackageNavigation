@@ -1,10 +1,10 @@
 import SwiftUI
 import CommonUI
 
-struct View1: View {
-    var viewModel = View1ViewModel()
-
-    var body: some View {
+public struct View1: View {
+    private let viewModel = View1ViewModel()
+    public init() {}
+    public var body: some View {
         VStack {
             Text("Micro App 3")
             Text("View 1")

@@ -1,10 +1,16 @@
 import MicroApp4
 
-class MicroApp3NavigationViewModel {
-    // MARK: - View Builders
-    private let microApp4NavigationViewModel = MicroApp4NavigationViewModel.shared
+public class MicroApp3NavigationViewModel {
+    public static let shared: MicroApp3NavigationViewModel = .init()
     
-    func createView2() -> View2 {
+    public init() {}
+    
+    // MARK: - View Builders
+    public func createView1() -> View1 {
+        return View1()
+    }
+    
+    public func createView2() -> View2 {
         return View2()
     }
 }

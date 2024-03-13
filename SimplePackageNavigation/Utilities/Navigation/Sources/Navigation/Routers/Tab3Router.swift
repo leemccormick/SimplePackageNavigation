@@ -4,6 +4,7 @@ public class Tab3Router: ObservableObject {
     public static let shared: Tab3Router = .init()
     
     public enum MicroApp3Destination: Codable, Hashable {
+        case  microApp3view1
         case  microApp3view2
     }
     
