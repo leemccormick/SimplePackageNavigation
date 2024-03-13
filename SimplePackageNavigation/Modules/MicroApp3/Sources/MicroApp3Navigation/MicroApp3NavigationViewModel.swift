@@ -1,4 +1,4 @@
-import MicroApp4
+import MicroApp3
 
 public class MicroApp3NavigationViewModel {
     public static let shared: MicroApp3NavigationViewModel = .init()

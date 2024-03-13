@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "MicroApp3",
-            targets: ["MicroApp3"]),
+            targets: ["MicroApp3", "MicroApp3Navigation"]),
     ],
     dependencies: [
         .package(path: "Navigation"),
@@ -22,6 +22,9 @@ let package = Package(
         .target(
             name: "MicroApp3",
             dependencies: ["Navigation", "CommonUI"]),
+        .target(
+            name: "MicroApp3Navigation",
+            dependencies: ["Navigation", "MicroApp3"]),
         .testTarget(
             name: "MicroApp3Tests",
             dependencies: ["MicroApp3"]),

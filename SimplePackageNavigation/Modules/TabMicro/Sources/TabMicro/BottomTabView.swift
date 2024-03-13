@@ -1,6 +1,6 @@
 import MicroApp1
 import MicroApp2
-import MicroApp3
+import MicroApp3Navigation
 import MicroApp4Navigation
 import Tab3Navigation
 import SwiftUI

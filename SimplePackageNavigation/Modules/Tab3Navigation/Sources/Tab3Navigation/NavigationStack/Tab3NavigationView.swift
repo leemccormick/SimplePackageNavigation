@@ -1,4 +1,4 @@
-import MicroApp3
+import MicroApp3Navigation
 import MicroApp4Navigation
 import Navigation
 import SwiftUI

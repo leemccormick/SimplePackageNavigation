@@ -1,4 +1,3 @@
-import MicroApp4
 import Navigation
 import SwiftUI
 
@@ -11,7 +10,7 @@ public struct MicroApp3NavigationView: View {
     
     public var body: some View {
         NavigationStack(path: $navPathWrapper.navPath) {
-            View1()
+            viewModelMicroApp3.createView1()
                 .navigationDestination(for: Tab3Router.MicroApp3Destination.self) { destination in
                     switch destination {
                     case .microApp3view1:
