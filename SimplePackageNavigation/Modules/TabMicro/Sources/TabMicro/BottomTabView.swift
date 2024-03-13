@@ -1,7 +1,7 @@
 import MicroApp1
 import MicroApp2
 import MicroApp3
-import MicroApp4
+import MicroApp4Navigation
 import Tab3Navigation
 import SwiftUI
 
@@ -22,7 +22,7 @@ public struct BottomTabView: View {
                 }
             Tab3NavigationView()
                 .tabItem {
-                    Label("TabNav3", systemImage: "3.circle")
+                    Label("TabNav34", systemImage: "34.circle")
                 }
             MicroApp3NavigationView()
                 .tabItem {

@@ -9,7 +9,7 @@ public struct MicroApp4NavigationView: View {
     
     public var body: some View {
         NavigationStack(path: $navPathWrapper.navPath) {
-            View1()
+            viewModel.createView1()
                 .navigationDestination(for: Tab3Router.MicroApp4Destination.self) { destination in
                     switch destination {
                     case .microApp4View1:

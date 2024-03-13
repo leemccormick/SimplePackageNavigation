@@ -1,3 +1,5 @@
+import MicroApp4
+
 public class MicroApp4NavigationViewModel {
     public static let shared: MicroApp4NavigationViewModel = .init()
     // MARK: - View Builders
