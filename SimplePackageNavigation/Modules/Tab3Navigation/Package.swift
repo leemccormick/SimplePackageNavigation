@@ -1,29 +1,31 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "TabMicro",
+    name: "Tab3Navigation",
     platforms: [.iOS(.v17)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "TabMicro",
-            targets: ["TabMicro"]),
+            name: "Tab3Navigation",
+            targets: ["Tab3Navigation"]),
     ],
     dependencies: [
-        .package(path: "MicroApp1"),
-        .package(path: "MicroApp2"),
-        .package(path: "Tab3Navigation"),
+        .package(path: "Navigation"),
+        .package(path: "MicroApp3"),
+        .package(path: "MicroApp4"),
+        .package(path: "MicroApp5"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "TabMicro",
-            dependencies: ["MicroApp1", "MicroApp2", "Tab3Navigation"]),
+            name: "Tab3Navigation",
+            dependencies: ["Navigation", "MicroApp3", "MicroApp4", "MicroApp5"]),
         .testTarget(
-            name: "TabMicroTests",
-            dependencies: ["TabMicro"]),
-    ])
+            name: "Tab3NavigationTests",
+            dependencies: ["Tab3Navigation"]),
+    ]
+)
