@@ -1,11 +1,12 @@
 import SwiftUI
+import AppConfig
 
 public struct MicroApp1NavigationView: View {
     var viewModel = MicroApp1NavigationViewModel()
     @ObservedObject var navPathWrapper = MicroApp1Router.shared.navPathWrapper
-
+    
     public init() {}
-
+    
     public var body: some View {
         NavigationStack(path: $navPathWrapper.navPath) {
             View1()
@@ -20,6 +21,12 @@ public struct MicroApp1NavigationView: View {
                     case .view3:
                         viewModel.createView3()
                     }
+                }
+                .onAppear {
+                    print("-------------------------- In MicroApp 1 --------------------------")
+                    print("✅ AppBuildConfiguration: \(AppBuildConfiguration.shared.environment)")
+                    print("🌍 AppBuildConfiguration BaseURL: \(AppBuildConfiguration.shared.baseURL)")
+                    print("-------------------------------------------------------------------")
                 }
         }
     }
