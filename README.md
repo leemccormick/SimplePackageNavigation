@@ -1,6 +1,29 @@
 # Simple Package Navigation
 - This project was created by AndrewBrehmAtDialexa.
 - Learn about Navigation between packages.
+  
+<hr>
+
+## Branch : navigate-between-micro-app
+- Learn how to use NavigationStack to navigate between Micro App
+  
+<img width="1270" alt="Screenshot 2024-03-14 at 11 26 36 AM" src="https://github.com/leemccormick/SimplePackageNavigation/assets/57606580/f1c00923-f06a-4dd1-bff8-0c1bbe41d6c0">
+
+- Step1: Create Shared Router to use between micro apps in Navigation package. Each Tab Item should have a router to navigation through each tab. In this demo, we created the "Tab3Router"
+  
+<img width="1270" alt="Screenshot 2024-03-14 at 10 09 09 AM" src="https://github.com/leemccormick/SimplePackageNavigation/assets/57606580/59d03479-c547-4d05-9d49-5a989f7dc209">
+
+- Step2: Create Package for each tab navigation and this package will contain the NavigationStack for the tab and RootView. This package will hold logics of all the screens in this tabs. See example in this package "Tab3Naviagation"
+  
+<img width="1270" alt="TabNavigationViewAM" src="https://github.com/leemccormick/SimplePackageNavigation/assets/57606580/31d4a0e9-151e-4496-86f6-277ddc75516d">
+
+- Step 3: In TabView Package, we can populate the Tab3RootView.
+
+- Step 4: Create MicroApp3, MicroApp4 and MicroApp5 with Screen inside each tab and using the "Tab3Router" from navigation package to navigation between micro apps.
+
+- Step 5: Test and run project.
+
+<hr>
 
 ## Branch : run-micro-apps-on-main-app 
 - Learn how to run mutiple micro app using Xcode Project from Main App. (Step 1 - 4)
